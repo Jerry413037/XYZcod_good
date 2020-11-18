@@ -42,11 +42,11 @@
 #define Baud_rate 115200
 #define Array_size 128
 #define ack_time 1500
-#define data_transfer_time 500
+#define data_transfer_time 100
 #define ASCII_Format_data_size 5000
 #define Cut_delay 200
 #define data_num_p 1
-#define Make_datapackage 50
+#define Make_datapackage 100
 /** @addtogroup HT32_Series_Peripheral_Examples HT32 Peripheral Examples
   * @{
   */
@@ -69,8 +69,7 @@ void RTC_Configuration(void);
 void Time_Display(u32 wTimeVar);
 void USB_HOST_SET_1(void);
 void USB_HOST_SET_2(void);
-int ACSII_format_UART(int ,int ,int ,int ,int ,int ,int ,int ,int ,int );
-int ACSII_format_PC(int ,int ,int ,int ,int ,int ,int ,int ,int ,int );
+int ACSII_format(int ,int ,int ,int ,int ,int ,int ,int ,int ,int );
 /* Global variables ----------------------------------------------------------------------------------------*/
 uc8  *gURTx_Ptr;
 vu32 gURTx_Length = 0;
@@ -116,10 +115,8 @@ int main(void)
 	char buffer[40]={0};
 	char *local_time;
 	u32 i=0;
-	int len;
-	int x[data_num_p]={0};
-	int y[data_num_p]={0};
-	int z[data_num_p]={0};
+	int len,z;
+	int x[data_num_p],y[data_num_p];
 	//PB8 switch key
 	CKCU_PeripClockConfig_TypeDef CKCUClock = {{ 0 }};
 	CKCUClock.Bit.PC = 1;
@@ -129,38 +126,48 @@ int main(void)
 	
 	gURRx_Ptr = gRx_Buffer;
 	UxART_Configuration();
+	
+
+		//USB_HOST_SET_2();
+//		x=Get_HID_data_x();
+//		printf("X : %x\r\n",x);
+//		Delayms(50);
+//			
+//		y=Get_HID_data_y();
+//		printf("Y : %x\r\n",y);
+//		Delayms(50);
+		
+//		z=Get_HID_data_Z();
+//		printf("Z : %x\r\n",z);
+//		Delayms(50);
+	
+	
 	//AT_commandinit();
 	AT_Time();
 	
 	data_num=data_num_p;
 	USB_HOST_SET_1();
-	USB_HOST_SET_2();
 	while(1){
+		//USART_DeInit(HTCFG_UART_PORT);
 		for(i=0;i<data_num_p;i++){
 			x[i]=Get_HID_data_x();
 			printf("X : %x\r\n",x[i]);
-			Delayms(50);
+			Delayms(30);
 				
 			y[i]=Get_HID_data_y();
 			printf("Y : %x\r\n",y[i]);
-			Delayms(50);
-			
-			z[i]=Get_HID_data_Z();
-			printf("Z : %x\r\n",z[i]);
-			Delayms(50);
+			Delayms(30);
 		}
+		
 		status_dataform=0;
 		check_error=0;
-		
-			if(GPIO_ReadInBit(HT_GPIOC,GPIO_PIN_12)==SET)//PC12
-				for(i=0;i<data_num_p;i++)
-					len=ACSII_format_PC(1,Year ,Month ,Day ,Hour ,Minute,Second++, x[i],y[i],z[i]);
-			else
-				for(i=0;i<data_num_p;i++)
-					len=ACSII_format_UART(1,Year ,Month ,Day ,Hour ,Minute,Second++, x[i],y[i],z[i]);
+		for(i=0;i<data_num_p;i++){
+			len=ACSII_format(1,Year ,Month ,Day ,Hour ,Minute,Second, x[i],y[i],0);
+		}
 		//UxART_Configuration();
-		if(GPIO_ReadInBit(HT_GPIOC,GPIO_PIN_12)==SET)//PC12
+		if(GPIO_ReadInBit(HT_GPIOC,GPIO_PIN_12)==SET)//PC
 			printf("%s\r\n",acsii_f);
+		
 		else																			//MQTT
 			AT_MQTT(len);
 		
@@ -246,7 +253,6 @@ void USB_HOST_SET_1()
 	ctl_length=8;
  	Get_ctl_length();
 	rd_host(0x37);
-	printf("111111111\n");
 	Delay(10);
 	ctl_length=host_data;
 	Set_Address(1);
@@ -271,9 +277,7 @@ void USB_HOST_SET_2()
 	host_init_1();
 	ctl_length_1=8;
  	Get_ctl_length_1();
-	rd_host_1(0x37);
-	printf("111111111\n");
-	Delay(10);
+	rd_host_1(0x37);Delay(10);
 	ctl_length_1=host_data_1;
 	Set_Address_1(2);
 	DEVICE_Descriptor_1();
@@ -331,16 +335,15 @@ void AT_Time(void){
 void AT_MQTT(int datalen){
 	printf("AT+CMQDISCON=0\r\n");
 	MQTT_status=1;
-	Delayms(data_transfer_time);
 	memset(gURRx_Ptr,NULL,gURRx_Length);
 	gURRx_Length=0;
 	//if(MQTT_status==1){
 		printf("AT+CMQNEW=\"61.58.248.108\",\"1883\",30000,1000\r\n");
-		Delayms(200);
+		NBiot_check();
 	//}
 	//if(MQTT_status==2){
 		printf("AT+CMQCON=0,3,\"client_Jerry\",10,1,0\r\n");
-		Delayms(200);
+		NBiot_check();
 	//}
 	//if(MQTT_status==3){
 		printf("AT+CMQPUB=0,\"/test/\",1,0,0,%d,",datalen);
@@ -361,7 +364,7 @@ void AT_MQTT(int datalen){
 //NBiot char analysis------------------------------------------------
 void NBiot_check(void){
 	int status_ACK;
-	Delayms(3500);
+	Delayms(500);
 //	if(strcmp(gURRx_Ptr,"AT+CRESET\r")==0 && MQTT_status==10){
 //		do{
 //			printf("AT\r\n");
@@ -407,7 +410,7 @@ void NBiot_TIMER(void){
 
 //-----------------------------------
 
-int ACSII_format_UART(int ID,int year,int mon,int day,int hour, int min,int sec,int x,int y,int z){
+int ACSII_format(int ID,int year,int mon,int day,int hour, int min,int sec,int x,int y,int z){
 	int i,j;
 	char format_ascii[1000]={0};
 	if(status_dataform==0){
@@ -420,8 +423,9 @@ int ACSII_format_UART(int ID,int year,int mon,int day,int hour, int min,int sec,
 		sprintf(format_ascii,"2c0a20");//,
 		strcat(acsii_f,format_ascii);
 	}
-	if(sec>=60 || sec==0){
-		sec=Second=0;
+	if(sec>=60){
+		sec=0;
+		Second=0;
 		min++;
 		Minute++;
 		if(min>=60){
@@ -429,7 +433,8 @@ int ACSII_format_UART(int ID,int year,int mon,int day,int hour, int min,int sec,
 			Hour++;
 			hour++;
 			if(hour>=24){
-				hour=Hour=0;
+				hour=0;
+				Hour=0;
 				day++;
 				Day++;
 			}
@@ -476,91 +481,17 @@ int ACSII_format_UART(int ID,int year,int mon,int day,int hour, int min,int sec,
 	strcat(acsii_f,format_ascii);
 	sprintf(format_ascii,"20225a5f61786973223a2022%02x%02x220a207d",f_Z[1],f_Z[0]);
 	strcat(acsii_f,format_ascii);
-	data_num--; 
+	data_num--;
 	if(data_num==0){
 		sprintf(format_ascii,"0a5d");//\n }
 		strcat(acsii_f,format_ascii);
 		data_num=data_num_p;
+		Delayms(Make_datapackage);
 	}
-	Delayms(Make_datapackage);
+	Second++;
 	return strlen(acsii_f);
 }
 
-
-int ACSII_format_PC(int ID,int year,int mon,int day,int hour, int min,int sec,int x,int y,int z){
-	int i,j;
-	char format_ascii[1000]={0};
-	if(status_dataform==0){
-		memset(acsii_f,NULL,ASCII_Format_data_size);
-		status_dataform=1;
-		sprintf(format_ascii,"21");//{\n ;
-		strcat(acsii_f,format_ascii);
-	}
-	else{
-		sprintf(format_ascii,"2c");//,
-		strcat(acsii_f,format_ascii);
-	}
-	if(sec>=60 || sec==0){
-		sec=Second=0;
-		min++;
-		Minute++;
-		if(min>=60){
-			min=Minute=0;
-			Hour++;
-			hour++;
-			if(hour>=24){
-				hour=Hour=0;
-				day++;
-				Day++;
-			}
-		}
-	}
-	if(hour>=24){
-				hour=Hour=0;
-				day++;
-				Day++;
-	}
-	Delayms(Make_datapackage);
-	f_ID[0]=ID+'0';
-	f_Year[0]=year/10+'0';
-	f_Year[1]=year%10+'0';
-	f_Month[0]=mon/10+'0';
-	f_Month [1]=mon%10+'0';
-	f_Day[0]=Day/10+'0';
-	f_Day[1]=Day%10+'0';
-	f_Hour[0]=hour/10+'0';
-	f_Hour[1]=hour%10+'0';
-	f_Minute[0]=min/10+'0';
-	f_Minute[1]=min%10+'0';
-	f_Second[0]=sec/10+'0';
-	f_Second[1]=sec%10+'0';
-	f_X[2]=x/100+'0';
-	f_X[1]=x/10%10+'0';
-	f_X[0]=x%10+'0';
-	f_Y[2]=y/100+'0';
-	f_Y[1]=y/10%10+'0';
-	f_Y[0]=y%10+'0';
-	f_Z[1]=z/10+'0';
-	f_Z[0]=z%10+'0';
-	sprintf(format_ascii,"%02x2c",f_ID[0]);//ID
-	strcat(acsii_f,format_ascii);
-	sprintf(format_ascii,"%02x%02x2d%02x%02x2d%02x%02x20%02x%02x3a%02x%02x3a%02x%02x222c",f_Year[0],f_Year[1],f_Month[0],f_Month[1],f_Day[0],f_Day[1],f_Hour[0],f_Hour[1],f_Minute[0],f_Minute[1],f_Second[0],f_Second[1]);
-	strcat(acsii_f,format_ascii);
-	snprintf(format_ascii,sizeof(acsii_f),"%02x%02x%02x2c",f_X[2],f_X[1],f_X[0]);
-	strcat(acsii_f,format_ascii);
-	snprintf(format_ascii,sizeof(acsii_f),"%02x%02x%02x2c",f_Y[2],f_Y[1],f_Y[0]);
-	strcat(acsii_f,format_ascii);
-	sprintf(format_ascii,"%02x%02x",f_Z[1],f_Z[0]);
-	strcat(acsii_f,format_ascii);
-	data_num--; 
-	if(data_num==0){
-		sprintf(format_ascii,"21");//\n }
-		strcat(acsii_f,format_ascii);
-		data_num=data_num_p;
-	}
-	Delayms(Make_datapackage);
-	return strlen(acsii_f);
-}
 
 #if (HT32_LIB_DEBUG == 1)
 /*********************************************************************************************************//**

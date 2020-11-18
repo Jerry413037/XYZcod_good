@@ -4,28 +4,19 @@ Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
 
 Section Cross References
 
-    main.o(i.ACSII_format_PC) refers to memseta.o(.text) for __aeabi_memclr4
-    main.o(i.ACSII_format_PC) refers to printf8.o(i.__0sprintf$8) for __2sprintf
-    main.o(i.ACSII_format_PC) refers to strcat.o(.text) for strcat
-    main.o(i.ACSII_format_PC) refers to delay.o(i.Delayms) for Delayms
-    main.o(i.ACSII_format_PC) refers to idiv.o(.text) for __aeabi_idivmod
-    main.o(i.ACSII_format_PC) refers to printf8.o(i.__0snprintf$8) for __2snprintf
-    main.o(i.ACSII_format_PC) refers to strlen.o(.text) for strlen
-    main.o(i.ACSII_format_PC) refers to main.o(.data) for .data
-    main.o(i.ACSII_format_PC) refers to main.o(.bss) for .bss
-    main.o(i.ACSII_format_UART) refers to memseta.o(.text) for __aeabi_memclr4
-    main.o(i.ACSII_format_UART) refers to printf8.o(i.__0sprintf$8) for __2sprintf
-    main.o(i.ACSII_format_UART) refers to strcat.o(.text) for strcat
-    main.o(i.ACSII_format_UART) refers to delay.o(i.Delayms) for Delayms
-    main.o(i.ACSII_format_UART) refers to idiv.o(.text) for __aeabi_idivmod
-    main.o(i.ACSII_format_UART) refers to printf8.o(i.__0snprintf$8) for __2snprintf
-    main.o(i.ACSII_format_UART) refers to strlen.o(.text) for strlen
-    main.o(i.ACSII_format_UART) refers to main.o(.data) for .data
-    main.o(i.ACSII_format_UART) refers to main.o(.bss) for .bss
-    main.o(i.ACSII_format_UART) refers to main.o(.conststring) for .conststring
+    main.o(i.ACSII_format) refers to memseta.o(.text) for __aeabi_memclr4
+    main.o(i.ACSII_format) refers to printf8.o(i.__0sprintf$8) for __2sprintf
+    main.o(i.ACSII_format) refers to strcat.o(.text) for strcat
+    main.o(i.ACSII_format) refers to delay.o(i.Delayms) for Delayms
+    main.o(i.ACSII_format) refers to idiv.o(.text) for __aeabi_idivmod
+    main.o(i.ACSII_format) refers to printf8.o(i.__0snprintf$8) for __2snprintf
+    main.o(i.ACSII_format) refers to strlen.o(.text) for strlen
+    main.o(i.ACSII_format) refers to main.o(.data) for .data
+    main.o(i.ACSII_format) refers to main.o(.bss) for .bss
+    main.o(i.ACSII_format) refers to main.o(.conststring) for .conststring
     main.o(i.AT_MQTT) refers to printf8.o(i.__0printf$8) for __2printf
-    main.o(i.AT_MQTT) refers to delay.o(i.Delayms) for Delayms
     main.o(i.AT_MQTT) refers to memseta.o(.text) for __aeabi_memclr
+    main.o(i.AT_MQTT) refers to main.o(i.NBiot_check) for NBiot_check
     main.o(i.AT_MQTT) refers to main.o(.data) for .data
     main.o(i.AT_MQTT) refers to main.o(.bss) for .bss
     main.o(i.AT_Time) refers to printf8.o(i.__0printf$8) for __2printf
@@ -45,7 +36,6 @@ Section Cross References
     main.o(i.USB_HOST_SET_1) refers to sl811hs.o(i.host_init) for host_init
     main.o(i.USB_HOST_SET_1) refers to descr.o(i.Get_ctl_length) for Get_ctl_length
     main.o(i.USB_HOST_SET_1) refers to sl811hs.o(i.rd_host) for rd_host
-    main.o(i.USB_HOST_SET_1) refers to printf8.o(i.__0printf$8) for __2printf
     main.o(i.USB_HOST_SET_1) refers to delay.o(i.Delay) for Delay
     main.o(i.USB_HOST_SET_1) refers to sl811hs.o(i.Set_Address) for Set_Address
     main.o(i.USB_HOST_SET_1) refers to descr.o(i.DEVICE_Descriptor) for DEVICE_Descriptor
@@ -58,7 +48,6 @@ Section Cross References
     main.o(i.USB_HOST_SET_2) refers to sl811hs_1.o(i.host_init_1) for host_init_1
     main.o(i.USB_HOST_SET_2) refers to descr_1.o(i.Get_ctl_length_1) for Get_ctl_length_1
     main.o(i.USB_HOST_SET_2) refers to sl811hs_1.o(i.rd_host_1) for rd_host_1
-    main.o(i.USB_HOST_SET_2) refers to printf8.o(i.__0printf$8) for __2printf
     main.o(i.USB_HOST_SET_2) refers to delay.o(i.Delay) for Delay
     main.o(i.USB_HOST_SET_2) refers to sl811hs_1.o(i.Set_Address_1) for Set_Address_1
     main.o(i.USB_HOST_SET_2) refers to descr_1.o(i.DEVICE_Descriptor_1) for DEVICE_Descriptor_1
@@ -81,16 +70,13 @@ Section Cross References
     main.o(i.main) refers to main.o(i.UxART_Configuration) for UxART_Configuration
     main.o(i.main) refers to main.o(i.AT_Time) for AT_Time
     main.o(i.main) refers to main.o(i.USB_HOST_SET_1) for USB_HOST_SET_1
-    main.o(i.main) refers to main.o(i.USB_HOST_SET_2) for USB_HOST_SET_2
     main.o(i.main) refers to descr.o(i.Get_HID_data_x) for Get_HID_data_x
     main.o(i.main) refers to printf8.o(i.__0printf$8) for __2printf
     main.o(i.main) refers to delay.o(i.Delayms) for Delayms
     main.o(i.main) refers to descr.o(i.Get_HID_data_y) for Get_HID_data_y
-    main.o(i.main) refers to descr_1.o(i.Get_HID_data_Z) for Get_HID_data_Z
+    main.o(i.main) refers to main.o(i.ACSII_format) for ACSII_format
     main.o(i.main) refers to ht32f5xxxx_gpio.o(i.GPIO_ReadInBit) for GPIO_ReadInBit
-    main.o(i.main) refers to main.o(i.ACSII_format_UART) for ACSII_format_UART
     main.o(i.main) refers to main.o(i.AT_MQTT) for AT_MQTT
-    main.o(i.main) refers to main.o(i.ACSII_format_PC) for ACSII_format_PC
     main.o(i.main) refers to main.o(.bss) for .bss
     main.o(i.main) refers to main.o(.data) for .data
     ht32f5xxxx_01_it.o(i.HardFault_Handler) refers to ht32f5xxxx_01_it.o(.data) for .data
@@ -862,6 +848,7 @@ Removing Unused input sections from the image.
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
     Removing main.o(i.AT_commandinit), (268 bytes).
+    Removing main.o(i.USB_HOST_SET_2), (172 bytes).
     Removing main.o(.bss), (128 bytes).
     Removing main.o(.bss), (128 bytes).
     Removing main.o(.data), (4 bytes).
@@ -879,8 +866,28 @@ Removing Unused input sections from the image.
     Removing sl811hs.o(.data), (1 bytes).
     Removing sl811hs_1.o(.rev16_text), (4 bytes).
     Removing sl811hs_1.o(.revsh_text), (4 bytes).
+    Removing sl811hs_1.o(i.Get_Descriptor_1), (116 bytes).
     Removing sl811hs_1.o(i.SL811_MemTest_1), (124 bytes).
+    Removing sl811hs_1.o(i.Set_Address_1), (56 bytes).
+    Removing sl811hs_1.o(i.commandloop_1), (48 bytes).
+    Removing sl811hs_1.o(i.get_HID_IN_endpoint_1), (48 bytes).
+    Removing sl811hs_1.o(i.host_go_1), (56 bytes).
+    Removing sl811hs_1.o(i.host_init_1), (208 bytes).
+    Removing sl811hs_1.o(i.host_port_1), (192 bytes).
+    Removing sl811hs_1.o(i.host_reset_1), (44 bytes).
+    Removing sl811hs_1.o(i.host_set_1), (124 bytes).
+    Removing sl811hs_1.o(i.in_1), (12 bytes).
+    Removing sl811hs_1.o(i.inpackage_1), (60 bytes).
+    Removing sl811hs_1.o(i.out_1), (12 bytes).
+    Removing sl811hs_1.o(i.outpackage_1), (60 bytes).
+    Removing sl811hs_1.o(i.port_inout_1), (348 bytes).
+    Removing sl811hs_1.o(i.rd_host_1), (168 bytes).
+    Removing sl811hs_1.o(i.read_host_port_1), (128 bytes).
     Removing sl811hs_1.o(i.read_reg_value_1), (40 bytes).
+    Removing sl811hs_1.o(i.setup_1), (12 bytes).
+    Removing sl811hs_1.o(i.setuppackage_1), (124 bytes).
+    Removing sl811hs_1.o(i.wr_host_1), (144 bytes).
+    Removing sl811hs_1.o(.data), (12 bytes).
     Removing sl811hs_1.o(.data), (1 bytes).
     Removing descr.o(.rev16_text), (4 bytes).
     Removing descr.o(.revsh_text), (4 bytes).
@@ -888,6 +895,11 @@ Removing Unused input sections from the image.
     Removing descr.o(i.String_Descriptor), (96 bytes).
     Removing descr_1.o(.rev16_text), (4 bytes).
     Removing descr_1.o(.revsh_text), (4 bytes).
+    Removing descr_1.o(i.Config_Descriptor_1), (64 bytes).
+    Removing descr_1.o(i.DEVICE_Descriptor_1), (28 bytes).
+    Removing descr_1.o(i.Get_HID_data_Z), (84 bytes).
+    Removing descr_1.o(i.Get_ctl_length_1), (28 bytes).
+    Removing descr_1.o(i.Set_Config_1), (52 bytes).
     Removing descr_1.o(i.Set_Idle_1), (76 bytes).
     Removing descr_1.o(i.String_Descriptor_1), (96 bytes).
     Removing system_ht32f5xxxx_01.o(.rev16_text), (4 bytes).
@@ -1442,7 +1454,7 @@ Removing Unused input sections from the image.
     Removing depilogue.o(.text), (190 bytes).
     Removing depilogue.o(i.__ARM_clz), (46 bytes).
 
-582 unused section(s) (total 24531 bytes) removed from the image.
+608 unused section(s) (total 26931 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1456,7 +1468,12 @@ Image Symbol Table
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
@@ -1464,31 +1481,26 @@ Image Symbol Table
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/string/strcat.c         0x00000000   Number         0  strcat.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
-    ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
@@ -1595,112 +1607,86 @@ Image Symbol Table
     .text                                    0x00000278   Section       36  init.o(.text)
     .text                                    0x0000029c   Section        0  llshl.o(.text)
     .text                                    0x000002bc   Section        0  llushr.o(.text)
-    i.ACSII_format_PC                        0x000002e0   Section        0  main.o(i.ACSII_format_PC)
-    i.ACSII_format_UART                      0x000005cc   Section        0  main.o(i.ACSII_format_UART)
-    i.AFIO_GPxConfig                         0x00000948   Section        0  ht32f5xxxx_gpio.o(i.AFIO_GPxConfig)
-    i.AT_MQTT                                0x000009a0   Section        0  main.o(i.AT_MQTT)
-    i.AT_Time                                0x00000a8c   Section        0  main.o(i.AT_Time)
-    i.CKCU_GetClocksFrequency                0x00000b20   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetClocksFrequency)
-    i.CKCU_GetPLLFrequency                   0x00000b8c   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetPLLFrequency)
-    i.CKCU_GetPeripFrequency                 0x00000bc8   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetPeripFrequency)
-    i.CKCU_PeripClockConfig                  0x00000bfc   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_PeripClockConfig)
-    i.Config_Descriptor                      0x00000c24   Section        0  descr.o(i.Config_Descriptor)
-    i.Config_Descriptor_1                    0x00000c64   Section        0  descr_1.o(i.Config_Descriptor_1)
-    i.DEVICE_Descriptor                      0x00000ca4   Section        0  descr.o(i.DEVICE_Descriptor)
-    i.DEVICE_Descriptor_1                    0x00000cc0   Section        0  descr_1.o(i.DEVICE_Descriptor_1)
-    i.Delay                                  0x00000cdc   Section        0  delay.o(i.Delay)
-    i.Delayms                                0x00000ce4   Section        0  delay.o(i.Delayms)
-    i.Delayus                                0x00000cfc   Section        0  delay.o(i.Delayus)
-    i.GPIO_DirectionConfig                   0x00000d0c   Section        0  ht32f5xxxx_gpio.o(i.GPIO_DirectionConfig)
-    i.GPIO_InputConfig                       0x00000d1c   Section        0  ht32f5xxxx_gpio.o(i.GPIO_InputConfig)
-    i.GPIO_PullResistorConfig                0x00000d2c   Section        0  ht32f5xxxx_gpio.o(i.GPIO_PullResistorConfig)
-    i.GPIO_ReadInBit                         0x00000d56   Section        0  ht32f5xxxx_gpio.o(i.GPIO_ReadInBit)
-    i.Get_Descriptor                         0x00000d60   Section        0  sl811hs.o(i.Get_Descriptor)
-    i.Get_Descriptor_1                       0x00000dd4   Section        0  sl811hs_1.o(i.Get_Descriptor_1)
-    i.Get_HID_data_Z                         0x00000e48   Section        0  descr_1.o(i.Get_HID_data_Z)
-    i.Get_HID_data_x                         0x00000e9c   Section        0  descr.o(i.Get_HID_data_x)
-    i.Get_HID_data_y                         0x00000ef8   Section        0  descr.o(i.Get_HID_data_y)
-    i.Get_ctl_length                         0x00000f50   Section        0  descr.o(i.Get_ctl_length)
-    i.Get_ctl_length_1                       0x00000f6c   Section        0  descr_1.o(i.Get_ctl_length_1)
-    i.HardFault_Handler                      0x00000f88   Section        0  ht32f5xxxx_01_it.o(i.HardFault_Handler)
-    i.NBiot_TIMER                            0x00000f98   Section        0  main.o(i.NBiot_TIMER)
-    i.NBiot_check                            0x0000102c   Section        0  main.o(i.NBiot_check)
-    i.NMI_Handler                            0x0000104c   Section        0  ht32f5xxxx_01_it.o(i.NMI_Handler)
-    i.PWRCU_CheckReadyAccessed               0x00001050   Section        0  ht32f5xxxx_pwrcu.o(i.PWRCU_CheckReadyAccessed)
-    i.PendSV_Handler                         0x00001070   Section        0  ht32f5xxxx_01_it.o(i.PendSV_Handler)
-    i.SERIAL_PutChar                         0x00001074   Section        0  ht32_serial.o(i.SERIAL_PutChar)
-    i.SVC_Handler                            0x00001088   Section        0  ht32f5xxxx_01_it.o(i.SVC_Handler)
-    i.Set_Address                            0x0000108c   Section        0  sl811hs.o(i.Set_Address)
-    i.Set_Address_1                          0x000010c4   Section        0  sl811hs_1.o(i.Set_Address_1)
-    i.Set_Config                             0x000010fc   Section        0  descr.o(i.Set_Config)
-    i.Set_Config_1                           0x00001130   Section        0  descr_1.o(i.Set_Config_1)
-    i.SysTick_Handler                        0x00001164   Section        0  ht32f5xxxx_01_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x00001168   Section        0  system_ht32f5xxxx_01.o(i.SystemInit)
-    i.USART1_IRQHandler                      0x00001264   Section        0  ht32f5xxxx_01_it.o(i.USART1_IRQHandler)
-    i.USART_GetFlagStatus                    0x00001328   Section        0  ht32f5xxxx_usart.o(i.USART_GetFlagStatus)
-    i.USART_GetIntStatus                     0x00001332   Section        0  ht32f5xxxx_usart.o(i.USART_GetIntStatus)
-    i.USART_Init                             0x0000133c   Section        0  ht32f5xxxx_usart.o(i.USART_Init)
-    i.USART_IntConfig                        0x000013c0   Section        0  ht32f5xxxx_usart.o(i.USART_IntConfig)
-    i.USART_ReceiveData                      0x000013d0   Section        0  ht32f5xxxx_usart.o(i.USART_ReceiveData)
-    i.USART_SendData                         0x000013d6   Section        0  ht32f5xxxx_usart.o(i.USART_SendData)
-    i.USART_TxRxCmd                          0x000013da   Section        0  ht32f5xxxx_usart.o(i.USART_TxRxCmd)
-    i.USB_HOST_SET_1                         0x000013f0   Section        0  main.o(i.USB_HOST_SET_1)
-    i.USB_HOST_SET_2                         0x000014a8   Section        0  main.o(i.USB_HOST_SET_2)
-    i.UxART_Configuration                    0x00001564   Section        0  main.o(i.UxART_Configuration)
-    i.__0printf$8                            0x000015f4   Section        0  printf8.o(i.__0printf$8)
-    i.__0snprintf$8                          0x00001614   Section        0  printf8.o(i.__0snprintf$8)
-    i.__0sprintf$8                           0x00001648   Section        0  printf8.o(i.__0sprintf$8)
-    i.__ARM_common_switch8                   0x00001670   Section        0  ht32f5xxxx_ckcu.o(i.__ARM_common_switch8)
-    i.__scatterload_copy                     0x0000168a   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x00001698   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x0000169a   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x000016a8   Section        0  printf8.o(i._printf_core)
-    _printf_core                             0x000016a9   Thumb Code  1020  printf8.o(i._printf_core)
-    i._printf_post_padding                   0x00001ad0   Section        0  printf8.o(i._printf_post_padding)
-    _printf_post_padding                     0x00001ad1   Thumb Code    32  printf8.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x00001af0   Section        0  printf8.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x00001af1   Thumb Code    44  printf8.o(i._printf_pre_padding)
-    i._snputc                                0x00001b1c   Section        0  printf8.o(i._snputc)
-    _snputc                                  0x00001b1d   Thumb Code    22  printf8.o(i._snputc)
-    i._sputc                                 0x00001b32   Section        0  printf8.o(i._sputc)
-    _sputc                                   0x00001b33   Thumb Code    10  printf8.o(i._sputc)
-    i.commandloop                            0x00001b3c   Section        0  sl811hs.o(i.commandloop)
-    i.commandloop_1                          0x00001b6c   Section        0  sl811hs_1.o(i.commandloop_1)
-    i.fputc                                  0x00001b9c   Section        0  ht32_retarget.o(i.fputc)
-    i.get_HID_IN_endpoint                    0x00001ba4   Section        0  sl811hs.o(i.get_HID_IN_endpoint)
-    i.get_HID_IN_endpoint_1                  0x00001bd4   Section        0  sl811hs_1.o(i.get_HID_IN_endpoint_1)
-    i.host_go                                0x00001c04   Section        0  sl811hs.o(i.host_go)
-    i.host_go_1                              0x00001c3c   Section        0  sl811hs_1.o(i.host_go_1)
-    i.host_init                              0x00001c74   Section        0  sl811hs.o(i.host_init)
-    i.host_init_1                            0x00001d44   Section        0  sl811hs_1.o(i.host_init_1)
-    i.host_port                              0x00001e14   Section        0  sl811hs.o(i.host_port)
-    i.host_port_1                            0x00001ecc   Section        0  sl811hs_1.o(i.host_port_1)
-    i.host_reset                             0x00001f8c   Section        0  sl811hs.o(i.host_reset)
-    i.host_reset_1                           0x00001fb8   Section        0  sl811hs_1.o(i.host_reset_1)
-    i.host_set                               0x00001fe4   Section        0  sl811hs.o(i.host_set)
-    i.host_set_1                             0x00002060   Section        0  sl811hs_1.o(i.host_set_1)
-    i.in                                     0x000020dc   Section        0  sl811hs.o(i.in)
-    i.in_1                                   0x000020e8   Section        0  sl811hs_1.o(i.in_1)
-    i.inpackage                              0x000020f4   Section        0  sl811hs.o(i.inpackage)
-    i.inpackage_1                            0x00002130   Section        0  sl811hs_1.o(i.inpackage_1)
-    i.main                                   0x0000216c   Section        0  main.o(i.main)
-    i.out                                    0x000022fc   Section        0  sl811hs.o(i.out)
-    i.out_1                                  0x00002308   Section        0  sl811hs_1.o(i.out_1)
-    i.outpackage                             0x00002314   Section        0  sl811hs.o(i.outpackage)
-    i.outpackage_1                           0x00002350   Section        0  sl811hs_1.o(i.outpackage_1)
-    i.port_inout                             0x0000238c   Section        0  sl811hs.o(i.port_inout)
-    i.port_inout_1                           0x000024e4   Section        0  sl811hs_1.o(i.port_inout_1)
-    i.rd_host                                0x00002640   Section        0  sl811hs.o(i.rd_host)
-    i.rd_host_1                              0x000026e8   Section        0  sl811hs_1.o(i.rd_host_1)
-    i.read_host_port                         0x00002790   Section        0  sl811hs.o(i.read_host_port)
-    i.read_host_port_1                       0x00002808   Section        0  sl811hs_1.o(i.read_host_port_1)
-    i.setup                                  0x00002888   Section        0  sl811hs.o(i.setup)
-    i.setup_1                                0x00002894   Section        0  sl811hs_1.o(i.setup_1)
-    i.setuppackage                           0x000028a0   Section        0  sl811hs.o(i.setuppackage)
-    i.setuppackage_1                         0x0000291c   Section        0  sl811hs_1.o(i.setuppackage_1)
-    i.wr_host                                0x00002998   Section        0  sl811hs.o(i.wr_host)
-    i.wr_host_1                              0x00002a28   Section        0  sl811hs_1.o(i.wr_host_1)
-    .conststring                             0x00002ab8   Section       65  main.o(.conststring)
+    i.ACSII_format                           0x000002e0   Section        0  main.o(i.ACSII_format)
+    i.AFIO_GPxConfig                         0x00000660   Section        0  ht32f5xxxx_gpio.o(i.AFIO_GPxConfig)
+    i.AT_MQTT                                0x000006b8   Section        0  main.o(i.AT_MQTT)
+    i.AT_Time                                0x00000798   Section        0  main.o(i.AT_Time)
+    i.CKCU_GetClocksFrequency                0x0000082c   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetClocksFrequency)
+    i.CKCU_GetPLLFrequency                   0x00000898   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetPLLFrequency)
+    i.CKCU_GetPeripFrequency                 0x000008d4   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_GetPeripFrequency)
+    i.CKCU_PeripClockConfig                  0x00000908   Section        0  ht32f5xxxx_ckcu.o(i.CKCU_PeripClockConfig)
+    i.Config_Descriptor                      0x00000930   Section        0  descr.o(i.Config_Descriptor)
+    i.DEVICE_Descriptor                      0x00000970   Section        0  descr.o(i.DEVICE_Descriptor)
+    i.Delay                                  0x0000098c   Section        0  delay.o(i.Delay)
+    i.Delayms                                0x00000994   Section        0  delay.o(i.Delayms)
+    i.Delayus                                0x000009ac   Section        0  delay.o(i.Delayus)
+    i.GPIO_DirectionConfig                   0x000009bc   Section        0  ht32f5xxxx_gpio.o(i.GPIO_DirectionConfig)
+    i.GPIO_InputConfig                       0x000009cc   Section        0  ht32f5xxxx_gpio.o(i.GPIO_InputConfig)
+    i.GPIO_PullResistorConfig                0x000009dc   Section        0  ht32f5xxxx_gpio.o(i.GPIO_PullResistorConfig)
+    i.GPIO_ReadInBit                         0x00000a06   Section        0  ht32f5xxxx_gpio.o(i.GPIO_ReadInBit)
+    i.Get_Descriptor                         0x00000a10   Section        0  sl811hs.o(i.Get_Descriptor)
+    i.Get_HID_data_x                         0x00000a84   Section        0  descr.o(i.Get_HID_data_x)
+    i.Get_HID_data_y                         0x00000ae0   Section        0  descr.o(i.Get_HID_data_y)
+    i.Get_ctl_length                         0x00000b38   Section        0  descr.o(i.Get_ctl_length)
+    i.HardFault_Handler                      0x00000b54   Section        0  ht32f5xxxx_01_it.o(i.HardFault_Handler)
+    i.NBiot_TIMER                            0x00000b64   Section        0  main.o(i.NBiot_TIMER)
+    i.NBiot_check                            0x00000bf8   Section        0  main.o(i.NBiot_check)
+    i.NMI_Handler                            0x00000c18   Section        0  ht32f5xxxx_01_it.o(i.NMI_Handler)
+    i.PWRCU_CheckReadyAccessed               0x00000c1c   Section        0  ht32f5xxxx_pwrcu.o(i.PWRCU_CheckReadyAccessed)
+    i.PendSV_Handler                         0x00000c3c   Section        0  ht32f5xxxx_01_it.o(i.PendSV_Handler)
+    i.SERIAL_PutChar                         0x00000c40   Section        0  ht32_serial.o(i.SERIAL_PutChar)
+    i.SVC_Handler                            0x00000c54   Section        0  ht32f5xxxx_01_it.o(i.SVC_Handler)
+    i.Set_Address                            0x00000c58   Section        0  sl811hs.o(i.Set_Address)
+    i.Set_Config                             0x00000c90   Section        0  descr.o(i.Set_Config)
+    i.SysTick_Handler                        0x00000cc4   Section        0  ht32f5xxxx_01_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x00000cc8   Section        0  system_ht32f5xxxx_01.o(i.SystemInit)
+    i.USART1_IRQHandler                      0x00000dc4   Section        0  ht32f5xxxx_01_it.o(i.USART1_IRQHandler)
+    i.USART_GetFlagStatus                    0x00000e88   Section        0  ht32f5xxxx_usart.o(i.USART_GetFlagStatus)
+    i.USART_GetIntStatus                     0x00000e92   Section        0  ht32f5xxxx_usart.o(i.USART_GetIntStatus)
+    i.USART_Init                             0x00000e9c   Section        0  ht32f5xxxx_usart.o(i.USART_Init)
+    i.USART_IntConfig                        0x00000f20   Section        0  ht32f5xxxx_usart.o(i.USART_IntConfig)
+    i.USART_ReceiveData                      0x00000f30   Section        0  ht32f5xxxx_usart.o(i.USART_ReceiveData)
+    i.USART_SendData                         0x00000f36   Section        0  ht32f5xxxx_usart.o(i.USART_SendData)
+    i.USART_TxRxCmd                          0x00000f3a   Section        0  ht32f5xxxx_usart.o(i.USART_TxRxCmd)
+    i.USB_HOST_SET_1                         0x00000f50   Section        0  main.o(i.USB_HOST_SET_1)
+    i.UxART_Configuration                    0x00000ff4   Section        0  main.o(i.UxART_Configuration)
+    i.__0printf$8                            0x00001084   Section        0  printf8.o(i.__0printf$8)
+    i.__0snprintf$8                          0x000010a4   Section        0  printf8.o(i.__0snprintf$8)
+    i.__0sprintf$8                           0x000010d8   Section        0  printf8.o(i.__0sprintf$8)
+    i.__ARM_common_switch8                   0x00001100   Section        0  ht32f5xxxx_ckcu.o(i.__ARM_common_switch8)
+    i.__scatterload_copy                     0x0000111a   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001128   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0000112a   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x00001138   Section        0  printf8.o(i._printf_core)
+    _printf_core                             0x00001139   Thumb Code  1020  printf8.o(i._printf_core)
+    i._printf_post_padding                   0x00001560   Section        0  printf8.o(i._printf_post_padding)
+    _printf_post_padding                     0x00001561   Thumb Code    32  printf8.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x00001580   Section        0  printf8.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x00001581   Thumb Code    44  printf8.o(i._printf_pre_padding)
+    i._snputc                                0x000015ac   Section        0  printf8.o(i._snputc)
+    _snputc                                  0x000015ad   Thumb Code    22  printf8.o(i._snputc)
+    i._sputc                                 0x000015c2   Section        0  printf8.o(i._sputc)
+    _sputc                                   0x000015c3   Thumb Code    10  printf8.o(i._sputc)
+    i.commandloop                            0x000015cc   Section        0  sl811hs.o(i.commandloop)
+    i.fputc                                  0x000015fc   Section        0  ht32_retarget.o(i.fputc)
+    i.get_HID_IN_endpoint                    0x00001604   Section        0  sl811hs.o(i.get_HID_IN_endpoint)
+    i.host_go                                0x00001634   Section        0  sl811hs.o(i.host_go)
+    i.host_init                              0x0000166c   Section        0  sl811hs.o(i.host_init)
+    i.host_port                              0x0000173c   Section        0  sl811hs.o(i.host_port)
+    i.host_reset                             0x000017f4   Section        0  sl811hs.o(i.host_reset)
+    i.host_set                               0x00001820   Section        0  sl811hs.o(i.host_set)
+    i.in                                     0x0000189c   Section        0  sl811hs.o(i.in)
+    i.inpackage                              0x000018a8   Section        0  sl811hs.o(i.inpackage)
+    i.main                                   0x000018e4   Section        0  main.o(i.main)
+    i.out                                    0x000019f4   Section        0  sl811hs.o(i.out)
+    i.outpackage                             0x00001a00   Section        0  sl811hs.o(i.outpackage)
+    i.port_inout                             0x00001a3c   Section        0  sl811hs.o(i.port_inout)
+    i.rd_host                                0x00001b94   Section        0  sl811hs.o(i.rd_host)
+    i.read_host_port                         0x00001c3c   Section        0  sl811hs.o(i.read_host_port)
+    i.setup                                  0x00001cb4   Section        0  sl811hs.o(i.setup)
+    i.setuppackage                           0x00001cc0   Section        0  sl811hs.o(i.setuppackage)
+    i.wr_host                                0x00001d3c   Section        0  sl811hs.o(i.wr_host)
+    .conststring                             0x00001dcc   Section       65  main.o(.conststring)
     .data                                    0x20000000   Section        4  main.o(.data)
     .data                                    0x20000004   Section       72  main.o(.data)
     .data                                    0x2000004c   Section        4  main.o(.data)
@@ -1708,10 +1694,9 @@ Image Symbol Table
     .data                                    0x20000054   Section        4  ht32f5xxxx_01_it.o(.data)
     gIsContinue                              0x20000054   Data           4  ht32f5xxxx_01_it.o(.data)
     .data                                    0x20000058   Section       12  sl811hs.o(.data)
-    .data                                    0x20000064   Section       12  sl811hs_1.o(.data)
-    .data                                    0x20000070   Section        4  ht32_retarget.o(.data)
-    .bss                                     0x20000074   Section     5218  main.o(.bss)
-    STACK                                    0x200014d8   Section      512  startup_ht32f5xxxx_01.o(STACK)
+    .data                                    0x20000064   Section        4  ht32_retarget.o(.data)
+    .bss                                     0x20000068   Section     5218  main.o(.bss)
+    STACK                                    0x200014d0   Section      512  startup_ht32f5xxxx_01.o(STACK)
 
     Global Symbols
 
@@ -1842,109 +1827,83 @@ Image Symbol Table
     _ll_shift_l                              0x0000029d   Thumb Code     0  llshl.o(.text)
     __aeabi_llsr                             0x000002bd   Thumb Code    34  llushr.o(.text)
     _ll_ushift_r                             0x000002bd   Thumb Code     0  llushr.o(.text)
-    ACSII_format_PC                          0x000002e1   Thumb Code   626  main.o(i.ACSII_format_PC)
-    ACSII_format_UART                        0x000005cd   Thumb Code   648  main.o(i.ACSII_format_UART)
-    AFIO_GPxConfig                           0x00000949   Thumb Code    82  ht32f5xxxx_gpio.o(i.AFIO_GPxConfig)
-    AT_MQTT                                  0x000009a1   Thumb Code    78  main.o(i.AT_MQTT)
-    AT_Time                                  0x00000a8d   Thumb Code    72  main.o(i.AT_Time)
-    CKCU_GetClocksFrequency                  0x00000b21   Thumb Code    98  ht32f5xxxx_ckcu.o(i.CKCU_GetClocksFrequency)
-    CKCU_GetPLLFrequency                     0x00000b8d   Thumb Code    50  ht32f5xxxx_ckcu.o(i.CKCU_GetPLLFrequency)
-    CKCU_GetPeripFrequency                   0x00000bc9   Thumb Code    48  ht32f5xxxx_ckcu.o(i.CKCU_GetPeripFrequency)
-    CKCU_PeripClockConfig                    0x00000bfd   Thumb Code    34  ht32f5xxxx_ckcu.o(i.CKCU_PeripClockConfig)
-    Config_Descriptor                        0x00000c25   Thumb Code    58  descr.o(i.Config_Descriptor)
-    Config_Descriptor_1                      0x00000c65   Thumb Code    58  descr_1.o(i.Config_Descriptor_1)
-    DEVICE_Descriptor                        0x00000ca5   Thumb Code    28  descr.o(i.DEVICE_Descriptor)
-    DEVICE_Descriptor_1                      0x00000cc1   Thumb Code    28  descr_1.o(i.DEVICE_Descriptor_1)
-    Delay                                    0x00000cdd   Thumb Code     6  delay.o(i.Delay)
-    Delayms                                  0x00000ce5   Thumb Code    18  delay.o(i.Delayms)
-    Delayus                                  0x00000cfd   Thumb Code    16  delay.o(i.Delayus)
-    GPIO_DirectionConfig                     0x00000d0d   Thumb Code    16  ht32f5xxxx_gpio.o(i.GPIO_DirectionConfig)
-    GPIO_InputConfig                         0x00000d1d   Thumb Code    16  ht32f5xxxx_gpio.o(i.GPIO_InputConfig)
-    GPIO_PullResistorConfig                  0x00000d2d   Thumb Code    42  ht32f5xxxx_gpio.o(i.GPIO_PullResistorConfig)
-    GPIO_ReadInBit                           0x00000d57   Thumb Code    10  ht32f5xxxx_gpio.o(i.GPIO_ReadInBit)
-    Get_Descriptor                           0x00000d61   Thumb Code   110  sl811hs.o(i.Get_Descriptor)
-    Get_Descriptor_1                         0x00000dd5   Thumb Code   110  sl811hs_1.o(i.Get_Descriptor_1)
-    Get_HID_data_Z                           0x00000e49   Thumb Code    66  descr_1.o(i.Get_HID_data_Z)
-    Get_HID_data_x                           0x00000e9d   Thumb Code    74  descr.o(i.Get_HID_data_x)
-    Get_HID_data_y                           0x00000ef9   Thumb Code    72  descr.o(i.Get_HID_data_y)
-    Get_ctl_length                           0x00000f51   Thumb Code    28  descr.o(i.Get_ctl_length)
-    Get_ctl_length_1                         0x00000f6d   Thumb Code    28  descr_1.o(i.Get_ctl_length_1)
-    HardFault_Handler                        0x00000f89   Thumb Code    10  ht32f5xxxx_01_it.o(i.HardFault_Handler)
-    NBiot_TIMER                              0x00000f99   Thumb Code   136  main.o(i.NBiot_TIMER)
-    NBiot_check                              0x0000102d   Thumb Code    24  main.o(i.NBiot_check)
-    NMI_Handler                              0x0000104d   Thumb Code     2  ht32f5xxxx_01_it.o(i.NMI_Handler)
-    PWRCU_CheckReadyAccessed                 0x00001051   Thumb Code    24  ht32f5xxxx_pwrcu.o(i.PWRCU_CheckReadyAccessed)
-    PendSV_Handler                           0x00001071   Thumb Code     2  ht32f5xxxx_01_it.o(i.PendSV_Handler)
-    SERIAL_PutChar                           0x00001075   Thumb Code    14  ht32_serial.o(i.SERIAL_PutChar)
-    SVC_Handler                              0x00001089   Thumb Code     2  ht32f5xxxx_01_it.o(i.SVC_Handler)
-    Set_Address                              0x0000108d   Thumb Code    50  sl811hs.o(i.Set_Address)
-    Set_Address_1                            0x000010c5   Thumb Code    50  sl811hs_1.o(i.Set_Address_1)
-    Set_Config                               0x000010fd   Thumb Code    46  descr.o(i.Set_Config)
-    Set_Config_1                             0x00001131   Thumb Code    46  descr_1.o(i.Set_Config_1)
-    SysTick_Handler                          0x00001165   Thumb Code     2  ht32f5xxxx_01_it.o(i.SysTick_Handler)
-    SystemInit                               0x00001169   Thumb Code   232  system_ht32f5xxxx_01.o(i.SystemInit)
-    USART1_IRQHandler                        0x00001265   Thumb Code   170  ht32f5xxxx_01_it.o(i.USART1_IRQHandler)
-    USART_GetFlagStatus                      0x00001329   Thumb Code    10  ht32f5xxxx_usart.o(i.USART_GetFlagStatus)
-    USART_GetIntStatus                       0x00001333   Thumb Code    10  ht32f5xxxx_usart.o(i.USART_GetIntStatus)
-    USART_Init                               0x0000133d   Thumb Code   114  ht32f5xxxx_usart.o(i.USART_Init)
-    USART_IntConfig                          0x000013c1   Thumb Code    16  ht32f5xxxx_usart.o(i.USART_IntConfig)
-    USART_ReceiveData                        0x000013d1   Thumb Code     6  ht32f5xxxx_usart.o(i.USART_ReceiveData)
-    USART_SendData                           0x000013d7   Thumb Code     4  ht32f5xxxx_usart.o(i.USART_SendData)
-    USART_TxRxCmd                            0x000013db   Thumb Code    20  ht32f5xxxx_usart.o(i.USART_TxRxCmd)
-    USB_HOST_SET_1                           0x000013f1   Thumb Code   150  main.o(i.USB_HOST_SET_1)
-    USB_HOST_SET_2                           0x000014a9   Thumb Code   152  main.o(i.USB_HOST_SET_2)
-    UxART_Configuration                      0x00001565   Thumb Code   130  main.o(i.UxART_Configuration)
-    __0printf$8                              0x000015f5   Thumb Code    24  printf8.o(i.__0printf$8)
-    __1printf$8                              0x000015f5   Thumb Code     0  printf8.o(i.__0printf$8)
-    __2printf                                0x000015f5   Thumb Code     0  printf8.o(i.__0printf$8)
-    __0snprintf$8                            0x00001615   Thumb Code    46  printf8.o(i.__0snprintf$8)
-    __1snprintf$8                            0x00001615   Thumb Code     0  printf8.o(i.__0snprintf$8)
-    __2snprintf                              0x00001615   Thumb Code     0  printf8.o(i.__0snprintf$8)
-    __0sprintf$8                             0x00001649   Thumb Code    36  printf8.o(i.__0sprintf$8)
-    __1sprintf$8                             0x00001649   Thumb Code     0  printf8.o(i.__0sprintf$8)
-    __2sprintf                               0x00001649   Thumb Code     0  printf8.o(i.__0sprintf$8)
-    __ARM_common_switch8                     0x00001671   Thumb Code    26  ht32f5xxxx_ckcu.o(i.__ARM_common_switch8)
-    __scatterload_copy                       0x0000168b   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x00001699   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x0000169b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    commandloop                              0x00001b3d   Thumb Code    44  sl811hs.o(i.commandloop)
-    commandloop_1                            0x00001b6d   Thumb Code    44  sl811hs_1.o(i.commandloop_1)
-    fputc                                    0x00001b9d   Thumb Code     8  ht32_retarget.o(i.fputc)
-    get_HID_IN_endpoint                      0x00001ba5   Thumb Code    42  sl811hs.o(i.get_HID_IN_endpoint)
-    get_HID_IN_endpoint_1                    0x00001bd5   Thumb Code    42  sl811hs_1.o(i.get_HID_IN_endpoint_1)
-    host_go                                  0x00001c05   Thumb Code    50  sl811hs.o(i.host_go)
-    host_go_1                                0x00001c3d   Thumb Code    50  sl811hs_1.o(i.host_go_1)
-    host_init                                0x00001c75   Thumb Code   202  sl811hs.o(i.host_init)
-    host_init_1                              0x00001d45   Thumb Code   202  sl811hs_1.o(i.host_init_1)
-    host_port                                0x00001e15   Thumb Code   180  sl811hs.o(i.host_port)
-    host_port_1                              0x00001ecd   Thumb Code   182  sl811hs_1.o(i.host_port_1)
-    host_reset                               0x00001f8d   Thumb Code    38  sl811hs.o(i.host_reset)
-    host_reset_1                             0x00001fb9   Thumb Code    38  sl811hs_1.o(i.host_reset_1)
-    host_set                                 0x00001fe5   Thumb Code   114  sl811hs.o(i.host_set)
-    host_set_1                               0x00002061   Thumb Code   114  sl811hs_1.o(i.host_set_1)
-    in                                       0x000020dd   Thumb Code    12  sl811hs.o(i.in)
-    in_1                                     0x000020e9   Thumb Code    12  sl811hs_1.o(i.in_1)
-    inpackage                                0x000020f5   Thumb Code    56  sl811hs.o(i.inpackage)
-    inpackage_1                              0x00002131   Thumb Code    56  sl811hs_1.o(i.inpackage_1)
-    main                                     0x0000216d   Thumb Code   334  main.o(i.main)
-    out                                      0x000022fd   Thumb Code    12  sl811hs.o(i.out)
-    out_1                                    0x00002309   Thumb Code    12  sl811hs_1.o(i.out_1)
-    outpackage                               0x00002315   Thumb Code    56  sl811hs.o(i.outpackage)
-    outpackage_1                             0x00002351   Thumb Code    56  sl811hs_1.o(i.outpackage_1)
-    port_inout                               0x0000238d   Thumb Code   338  sl811hs.o(i.port_inout)
-    port_inout_1                             0x000024e5   Thumb Code   340  sl811hs_1.o(i.port_inout_1)
-    rd_host                                  0x00002641   Thumb Code   158  sl811hs.o(i.rd_host)
-    rd_host_1                                0x000026e9   Thumb Code   158  sl811hs_1.o(i.rd_host_1)
-    read_host_port                           0x00002791   Thumb Code   112  sl811hs.o(i.read_host_port)
-    read_host_port_1                         0x00002809   Thumb Code   114  sl811hs_1.o(i.read_host_port_1)
-    setup                                    0x00002889   Thumb Code    12  sl811hs.o(i.setup)
-    setup_1                                  0x00002895   Thumb Code    12  sl811hs_1.o(i.setup_1)
-    setuppackage                             0x000028a1   Thumb Code   120  sl811hs.o(i.setuppackage)
-    setuppackage_1                           0x0000291d   Thumb Code   120  sl811hs_1.o(i.setuppackage_1)
-    wr_host                                  0x00002999   Thumb Code   136  sl811hs.o(i.wr_host)
-    wr_host_1                                0x00002a29   Thumb Code   136  sl811hs_1.o(i.wr_host_1)
-    Region$$Table$$Base                      0x00002afc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00002b1c   Number         0  anon$$obj.o(Region$$Table)
+    ACSII_format                             0x000002e1   Thumb Code   652  main.o(i.ACSII_format)
+    AFIO_GPxConfig                           0x00000661   Thumb Code    82  ht32f5xxxx_gpio.o(i.AFIO_GPxConfig)
+    AT_MQTT                                  0x000006b9   Thumb Code    66  main.o(i.AT_MQTT)
+    AT_Time                                  0x00000799   Thumb Code    72  main.o(i.AT_Time)
+    CKCU_GetClocksFrequency                  0x0000082d   Thumb Code    98  ht32f5xxxx_ckcu.o(i.CKCU_GetClocksFrequency)
+    CKCU_GetPLLFrequency                     0x00000899   Thumb Code    50  ht32f5xxxx_ckcu.o(i.CKCU_GetPLLFrequency)
+    CKCU_GetPeripFrequency                   0x000008d5   Thumb Code    48  ht32f5xxxx_ckcu.o(i.CKCU_GetPeripFrequency)
+    CKCU_PeripClockConfig                    0x00000909   Thumb Code    34  ht32f5xxxx_ckcu.o(i.CKCU_PeripClockConfig)
+    Config_Descriptor                        0x00000931   Thumb Code    58  descr.o(i.Config_Descriptor)
+    DEVICE_Descriptor                        0x00000971   Thumb Code    28  descr.o(i.DEVICE_Descriptor)
+    Delay                                    0x0000098d   Thumb Code     6  delay.o(i.Delay)
+    Delayms                                  0x00000995   Thumb Code    18  delay.o(i.Delayms)
+    Delayus                                  0x000009ad   Thumb Code    16  delay.o(i.Delayus)
+    GPIO_DirectionConfig                     0x000009bd   Thumb Code    16  ht32f5xxxx_gpio.o(i.GPIO_DirectionConfig)
+    GPIO_InputConfig                         0x000009cd   Thumb Code    16  ht32f5xxxx_gpio.o(i.GPIO_InputConfig)
+    GPIO_PullResistorConfig                  0x000009dd   Thumb Code    42  ht32f5xxxx_gpio.o(i.GPIO_PullResistorConfig)
+    GPIO_ReadInBit                           0x00000a07   Thumb Code    10  ht32f5xxxx_gpio.o(i.GPIO_ReadInBit)
+    Get_Descriptor                           0x00000a11   Thumb Code   110  sl811hs.o(i.Get_Descriptor)
+    Get_HID_data_x                           0x00000a85   Thumb Code    74  descr.o(i.Get_HID_data_x)
+    Get_HID_data_y                           0x00000ae1   Thumb Code    72  descr.o(i.Get_HID_data_y)
+    Get_ctl_length                           0x00000b39   Thumb Code    28  descr.o(i.Get_ctl_length)
+    HardFault_Handler                        0x00000b55   Thumb Code    10  ht32f5xxxx_01_it.o(i.HardFault_Handler)
+    NBiot_TIMER                              0x00000b65   Thumb Code   136  main.o(i.NBiot_TIMER)
+    NBiot_check                              0x00000bf9   Thumb Code    26  main.o(i.NBiot_check)
+    NMI_Handler                              0x00000c19   Thumb Code     2  ht32f5xxxx_01_it.o(i.NMI_Handler)
+    PWRCU_CheckReadyAccessed                 0x00000c1d   Thumb Code    24  ht32f5xxxx_pwrcu.o(i.PWRCU_CheckReadyAccessed)
+    PendSV_Handler                           0x00000c3d   Thumb Code     2  ht32f5xxxx_01_it.o(i.PendSV_Handler)
+    SERIAL_PutChar                           0x00000c41   Thumb Code    14  ht32_serial.o(i.SERIAL_PutChar)
+    SVC_Handler                              0x00000c55   Thumb Code     2  ht32f5xxxx_01_it.o(i.SVC_Handler)
+    Set_Address                              0x00000c59   Thumb Code    50  sl811hs.o(i.Set_Address)
+    Set_Config                               0x00000c91   Thumb Code    46  descr.o(i.Set_Config)
+    SysTick_Handler                          0x00000cc5   Thumb Code     2  ht32f5xxxx_01_it.o(i.SysTick_Handler)
+    SystemInit                               0x00000cc9   Thumb Code   232  system_ht32f5xxxx_01.o(i.SystemInit)
+    USART1_IRQHandler                        0x00000dc5   Thumb Code   170  ht32f5xxxx_01_it.o(i.USART1_IRQHandler)
+    USART_GetFlagStatus                      0x00000e89   Thumb Code    10  ht32f5xxxx_usart.o(i.USART_GetFlagStatus)
+    USART_GetIntStatus                       0x00000e93   Thumb Code    10  ht32f5xxxx_usart.o(i.USART_GetIntStatus)
+    USART_Init                               0x00000e9d   Thumb Code   114  ht32f5xxxx_usart.o(i.USART_Init)
+    USART_IntConfig                          0x00000f21   Thumb Code    16  ht32f5xxxx_usart.o(i.USART_IntConfig)
+    USART_ReceiveData                        0x00000f31   Thumb Code     6  ht32f5xxxx_usart.o(i.USART_ReceiveData)
+    USART_SendData                           0x00000f37   Thumb Code     4  ht32f5xxxx_usart.o(i.USART_SendData)
+    USART_TxRxCmd                            0x00000f3b   Thumb Code    20  ht32f5xxxx_usart.o(i.USART_TxRxCmd)
+    USB_HOST_SET_1                           0x00000f51   Thumb Code   144  main.o(i.USB_HOST_SET_1)
+    UxART_Configuration                      0x00000ff5   Thumb Code   130  main.o(i.UxART_Configuration)
+    __0printf$8                              0x00001085   Thumb Code    24  printf8.o(i.__0printf$8)
+    __1printf$8                              0x00001085   Thumb Code     0  printf8.o(i.__0printf$8)
+    __2printf                                0x00001085   Thumb Code     0  printf8.o(i.__0printf$8)
+    __0snprintf$8                            0x000010a5   Thumb Code    46  printf8.o(i.__0snprintf$8)
+    __1snprintf$8                            0x000010a5   Thumb Code     0  printf8.o(i.__0snprintf$8)
+    __2snprintf                              0x000010a5   Thumb Code     0  printf8.o(i.__0snprintf$8)
+    __0sprintf$8                             0x000010d9   Thumb Code    36  printf8.o(i.__0sprintf$8)
+    __1sprintf$8                             0x000010d9   Thumb Code     0  printf8.o(i.__0sprintf$8)
+    __2sprintf                               0x000010d9   Thumb Code     0  printf8.o(i.__0sprintf$8)
+    __ARM_common_switch8                     0x00001101   Thumb Code    26  ht32f5xxxx_ckcu.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x0000111b   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001129   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0000112b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    commandloop                              0x000015cd   Thumb Code    44  sl811hs.o(i.commandloop)
+    fputc                                    0x000015fd   Thumb Code     8  ht32_retarget.o(i.fputc)
+    get_HID_IN_endpoint                      0x00001605   Thumb Code    42  sl811hs.o(i.get_HID_IN_endpoint)
+    host_go                                  0x00001635   Thumb Code    50  sl811hs.o(i.host_go)
+    host_init                                0x0000166d   Thumb Code   202  sl811hs.o(i.host_init)
+    host_port                                0x0000173d   Thumb Code   180  sl811hs.o(i.host_port)
+    host_reset                               0x000017f5   Thumb Code    38  sl811hs.o(i.host_reset)
+    host_set                                 0x00001821   Thumb Code   114  sl811hs.o(i.host_set)
+    in                                       0x0000189d   Thumb Code    12  sl811hs.o(i.in)
+    inpackage                                0x000018a9   Thumb Code    56  sl811hs.o(i.inpackage)
+    main                                     0x000018e5   Thumb Code   220  main.o(i.main)
+    out                                      0x000019f5   Thumb Code    12  sl811hs.o(i.out)
+    outpackage                               0x00001a01   Thumb Code    56  sl811hs.o(i.outpackage)
+    port_inout                               0x00001a3d   Thumb Code   338  sl811hs.o(i.port_inout)
+    rd_host                                  0x00001b95   Thumb Code   158  sl811hs.o(i.rd_host)
+    read_host_port                           0x00001c3d   Thumb Code   112  sl811hs.o(i.read_host_port)
+    setup                                    0x00001cb5   Thumb Code    12  sl811hs.o(i.setup)
+    setuppackage                             0x00001cc1   Thumb Code   120  sl811hs.o(i.setuppackage)
+    wr_host                                  0x00001d3d   Thumb Code   136  sl811hs.o(i.wr_host)
+    Region$$Table$$Base                      0x00001e10   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001e30   Number         0  anon$$obj.o(Region$$Table)
     gURTx_Length                             0x20000000   Data           4  main.o(.data)
     length                                   0x20000004   Data           1  main.o(.data)
     length_1                                 0x20000005   Data           1  main.o(.data)
@@ -1979,19 +1938,12 @@ Image Symbol Table
     ctl_length                               0x2000005c   Data           1  sl811hs.o(.data)
     HID_IN_endpoint                          0x2000005d   Data           1  sl811hs.o(.data)
     loopcounter                              0x20000060   Data           4  sl811hs.o(.data)
-    deviceaddr_1                             0x20000064   Data           1  sl811hs_1.o(.data)
-    endpoint_1                               0x20000065   Data           1  sl811hs_1.o(.data)
-    host_data_1                              0x20000066   Data           1  sl811hs_1.o(.data)
-    speed_1                                  0x20000067   Data           1  sl811hs_1.o(.data)
-    ctl_length_1                             0x20000068   Data           1  sl811hs_1.o(.data)
-    HID_IN_endpoint_1                        0x20000069   Data           1  sl811hs_1.o(.data)
-    loopcounter_1                            0x2000006c   Data           4  sl811hs_1.o(.data)
-    __stdout                                 0x20000070   Data           4  ht32_retarget.o(.data)
-    acsii_f                                  0x20000074   Data        5000  main.o(.bss)
-    gRx_Buffer                               0x200013fc   Data         128  main.o(.bss)
-    Timer_buf                                0x2000147c   Data          90  main.o(.bss)
-    __HT_check_sp                            0x200014d8   Data           0  startup_ht32f5xxxx_01.o(STACK)
-    __initial_sp                             0x200016d8   Data           0  startup_ht32f5xxxx_01.o(STACK)
+    __stdout                                 0x20000064   Data           4  ht32_retarget.o(.data)
+    acsii_f                                  0x20000068   Data        5000  main.o(.bss)
+    gRx_Buffer                               0x200013f0   Data         128  main.o(.bss)
+    Timer_buf                                0x20001470   Data          90  main.o(.bss)
+    __HT_check_sp                            0x200014d0   Data           0  startup_ht32f5xxxx_01.o(STACK)
+    __initial_sp                             0x200016d0   Data           0  startup_ht32f5xxxx_01.o(STACK)
 
 
 
@@ -2001,165 +1953,138 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00002b90, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001e98, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x00000000, Size: 0x00002b1c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00001e30, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000164   Code   RO          913  * RESET               startup_ht32f5xxxx_01.o
-    0x00000164   0x00000000   Code   RO         4381  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x00000164   0x00000004   Code   RO         4655    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x00000168   0x00000004   Code   RO         4658    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x0000016c   0x00000000   Code   RO         4660    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x0000016c   0x00000000   Code   RO         4662    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x0000016c   0x00000008   Code   RO         4663    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x00000174   0x00000000   Code   RO         4665    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x00000174   0x00000000   Code   RO         4667    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x00000174   0x00000004   Code   RO         4656    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
-    0x00000178   0x0000002c   Code   RO         4384    .text               mc_p.l(uidiv.o)
-    0x000001a4   0x00000028   Code   RO         4386    .text               mc_p.l(idiv.o)
-    0x000001cc   0x00000024   Code   RO         4388    .text               mc_p.l(memseta.o)
-    0x000001f0   0x00000018   Code   RO         4390    .text               mc_p.l(strcat.o)
-    0x00000208   0x0000000e   Code   RO         4392    .text               mc_p.l(strlen.o)
-    0x00000216   0x00000060   Code   RO         4669    .text               mc_p.l(uldiv.o)
+    0x00000000   0x00000164   Code   RO          907  * RESET               startup_ht32f5xxxx_01.o
+    0x00000164   0x00000000   Code   RO         4375  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x00000164   0x00000004   Code   RO         4649    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x00000168   0x00000004   Code   RO         4652    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x0000016c   0x00000000   Code   RO         4654    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x0000016c   0x00000000   Code   RO         4656    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x0000016c   0x00000008   Code   RO         4657    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x00000174   0x00000000   Code   RO         4659    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x00000174   0x00000000   Code   RO         4661    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x00000174   0x00000004   Code   RO         4650    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x00000178   0x0000002c   Code   RO         4378    .text               mc_p.l(uidiv.o)
+    0x000001a4   0x00000028   Code   RO         4380    .text               mc_p.l(idiv.o)
+    0x000001cc   0x00000024   Code   RO         4382    .text               mc_p.l(memseta.o)
+    0x000001f0   0x00000018   Code   RO         4384    .text               mc_p.l(strcat.o)
+    0x00000208   0x0000000e   Code   RO         4386    .text               mc_p.l(strlen.o)
+    0x00000216   0x00000060   Code   RO         4663    .text               mc_p.l(uldiv.o)
     0x00000276   0x00000002   PAD
-    0x00000278   0x00000024   Code   RO         4682    .text               mc_p.l(init.o)
-    0x0000029c   0x00000020   Code   RO         4684    .text               mc_p.l(llshl.o)
-    0x000002bc   0x00000022   Code   RO         4686    .text               mc_p.l(llushr.o)
+    0x00000278   0x00000024   Code   RO         4676    .text               mc_p.l(init.o)
+    0x0000029c   0x00000020   Code   RO         4678    .text               mc_p.l(llshl.o)
+    0x000002bc   0x00000022   Code   RO         4680    .text               mc_p.l(llushr.o)
     0x000002de   0x00000002   PAD
-    0x000002e0   0x000002ec   Code   RO            3    i.ACSII_format_PC   main.o
-    0x000005cc   0x0000037c   Code   RO            4    i.ACSII_format_UART  main.o
-    0x00000948   0x00000058   Code   RO         1868    i.AFIO_GPxConfig    ht32f5xxxx_gpio.o
-    0x000009a0   0x000000ec   Code   RO            5    i.AT_MQTT           main.o
-    0x00000a8c   0x00000094   Code   RO            6    i.AT_Time           main.o
-    0x00000b20   0x0000006c   Code   RO         1292    i.CKCU_GetClocksFrequency  ht32f5xxxx_ckcu.o
-    0x00000b8c   0x0000003c   Code   RO         1294    i.CKCU_GetPLLFrequency  ht32f5xxxx_ckcu.o
-    0x00000bc8   0x00000034   Code   RO         1295    i.CKCU_GetPeripFrequency  ht32f5xxxx_ckcu.o
-    0x00000bfc   0x00000028   Code   RO         1310    i.CKCU_PeripClockConfig  ht32f5xxxx_ckcu.o
-    0x00000c24   0x00000040   Code   RO          735    i.Config_Descriptor  descr.o
-    0x00000c64   0x00000040   Code   RO          797    i.Config_Descriptor_1  descr_1.o
-    0x00000ca4   0x0000001c   Code   RO          736    i.DEVICE_Descriptor  descr.o
-    0x00000cc0   0x0000001c   Code   RO          798    i.DEVICE_Descriptor_1  descr_1.o
-    0x00000cdc   0x00000006   Code   RO          855    i.Delay             delay.o
-    0x00000ce2   0x00000002   PAD
-    0x00000ce4   0x00000018   Code   RO          856    i.Delayms           delay.o
-    0x00000cfc   0x00000010   Code   RO          857    i.Delayus           delay.o
-    0x00000d0c   0x00000010   Code   RO         1871    i.GPIO_DirectionConfig  ht32f5xxxx_gpio.o
-    0x00000d1c   0x00000010   Code   RO         1875    i.GPIO_InputConfig  ht32f5xxxx_gpio.o
-    0x00000d2c   0x0000002a   Code   RO         1880    i.GPIO_PullResistorConfig  ht32f5xxxx_gpio.o
-    0x00000d56   0x0000000a   Code   RO         1881    i.GPIO_ReadInBit    ht32f5xxxx_gpio.o
-    0x00000d60   0x00000074   Code   RO          335    i.Get_Descriptor    sl811hs.o
-    0x00000dd4   0x00000074   Code   RO          589    i.Get_Descriptor_1  sl811hs_1.o
-    0x00000e48   0x00000054   Code   RO          799    i.Get_HID_data_Z    descr_1.o
-    0x00000e9c   0x0000005c   Code   RO          737    i.Get_HID_data_x    descr.o
-    0x00000ef8   0x00000058   Code   RO          738    i.Get_HID_data_y    descr.o
-    0x00000f50   0x0000001c   Code   RO          739    i.Get_ctl_length    descr.o
-    0x00000f6c   0x0000001c   Code   RO          800    i.Get_ctl_length_1  descr_1.o
-    0x00000f88   0x00000010   Code   RO          280    i.HardFault_Handler  ht32f5xxxx_01_it.o
-    0x00000f98   0x00000094   Code   RO            8    i.NBiot_TIMER       main.o
-    0x0000102c   0x00000020   Code   RO            9    i.NBiot_check       main.o
-    0x0000104c   0x00000002   Code   RO          281    i.NMI_Handler       ht32f5xxxx_01_it.o
-    0x0000104e   0x00000002   PAD
-    0x00001050   0x00000020   Code   RO         2412    i.PWRCU_CheckReadyAccessed  ht32f5xxxx_pwrcu.o
-    0x00001070   0x00000002   Code   RO          282    i.PendSV_Handler    ht32f5xxxx_01_it.o
-    0x00001072   0x00000002   PAD
-    0x00001074   0x00000014   Code   RO         3942    i.SERIAL_PutChar    ht32_serial.o
-    0x00001088   0x00000002   Code   RO          283    i.SVC_Handler       ht32f5xxxx_01_it.o
-    0x0000108a   0x00000002   PAD
-    0x0000108c   0x00000038   Code   RO          337    i.Set_Address       sl811hs.o
-    0x000010c4   0x00000038   Code   RO          591    i.Set_Address_1     sl811hs_1.o
-    0x000010fc   0x00000034   Code   RO          740    i.Set_Config        descr.o
-    0x00001130   0x00000034   Code   RO          801    i.Set_Config_1      descr_1.o
-    0x00001164   0x00000002   Code   RO          284    i.SysTick_Handler   ht32f5xxxx_01_it.o
-    0x00001166   0x00000002   PAD
-    0x00001168   0x000000fc   Code   RO          879    i.SystemInit        system_ht32f5xxxx_01.o
-    0x00001264   0x000000c4   Code   RO          285    i.USART1_IRQHandler  ht32f5xxxx_01_it.o
-    0x00001328   0x0000000a   Code   RO         3334    i.USART_GetFlagStatus  ht32f5xxxx_usart.o
-    0x00001332   0x0000000a   Code   RO         3335    i.USART_GetIntStatus  ht32f5xxxx_usart.o
-    0x0000133c   0x00000084   Code   RO         3337    i.USART_Init        ht32f5xxxx_usart.o
-    0x000013c0   0x00000010   Code   RO         3338    i.USART_IntConfig   ht32f5xxxx_usart.o
-    0x000013d0   0x00000006   Code   RO         3347    i.USART_ReceiveData  ht32f5xxxx_usart.o
-    0x000013d6   0x00000004   Code   RO         3348    i.USART_SendData    ht32f5xxxx_usart.o
-    0x000013da   0x00000014   Code   RO         3359    i.USART_TxRxCmd     ht32f5xxxx_usart.o
-    0x000013ee   0x00000002   PAD
-    0x000013f0   0x000000b8   Code   RO           10    i.USB_HOST_SET_1    main.o
-    0x000014a8   0x000000bc   Code   RO           11    i.USB_HOST_SET_2    main.o
-    0x00001564   0x00000090   Code   RO           12    i.UxART_Configuration  main.o
-    0x000015f4   0x00000020   Code   RO         4601    i.__0printf$8       mc_p.l(printf8.o)
-    0x00001614   0x00000034   Code   RO         4602    i.__0snprintf$8     mc_p.l(printf8.o)
-    0x00001648   0x00000028   Code   RO         4603    i.__0sprintf$8      mc_p.l(printf8.o)
-    0x00001670   0x0000001a   Code   RO         1483    i.__ARM_common_switch8  ht32f5xxxx_ckcu.o
-    0x0000168a   0x0000000e   Code   RO         4696    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x00001698   0x00000002   Code   RO         4697    i.__scatterload_null  mc_p.l(handlers.o)
-    0x0000169a   0x0000000e   Code   RO         4698    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x000016a8   0x00000428   Code   RO         4608    i._printf_core      mc_p.l(printf8.o)
-    0x00001ad0   0x00000020   Code   RO         4609    i._printf_post_padding  mc_p.l(printf8.o)
-    0x00001af0   0x0000002c   Code   RO         4610    i._printf_pre_padding  mc_p.l(printf8.o)
-    0x00001b1c   0x00000016   Code   RO         4611    i._snputc           mc_p.l(printf8.o)
-    0x00001b32   0x0000000a   Code   RO         4612    i._sputc            mc_p.l(printf8.o)
-    0x00001b3c   0x00000030   Code   RO          338    i.commandloop       sl811hs.o
-    0x00001b6c   0x00000030   Code   RO          592    i.commandloop_1     sl811hs_1.o
-    0x00001b9c   0x00000008   Code   RO         3881    i.fputc             ht32_retarget.o
-    0x00001ba4   0x00000030   Code   RO          339    i.get_HID_IN_endpoint  sl811hs.o
-    0x00001bd4   0x00000030   Code   RO          593    i.get_HID_IN_endpoint_1  sl811hs_1.o
-    0x00001c04   0x00000038   Code   RO          340    i.host_go           sl811hs.o
-    0x00001c3c   0x00000038   Code   RO          594    i.host_go_1         sl811hs_1.o
-    0x00001c74   0x000000d0   Code   RO          341    i.host_init         sl811hs.o
-    0x00001d44   0x000000d0   Code   RO          595    i.host_init_1       sl811hs_1.o
-    0x00001e14   0x000000b8   Code   RO          342    i.host_port         sl811hs.o
-    0x00001ecc   0x000000c0   Code   RO          596    i.host_port_1       sl811hs_1.o
-    0x00001f8c   0x0000002c   Code   RO          343    i.host_reset        sl811hs.o
-    0x00001fb8   0x0000002c   Code   RO          597    i.host_reset_1      sl811hs_1.o
-    0x00001fe4   0x0000007c   Code   RO          344    i.host_set          sl811hs.o
-    0x00002060   0x0000007c   Code   RO          598    i.host_set_1        sl811hs_1.o
-    0x000020dc   0x0000000c   Code   RO          345    i.in                sl811hs.o
-    0x000020e8   0x0000000c   Code   RO          599    i.in_1              sl811hs_1.o
-    0x000020f4   0x0000003c   Code   RO          346    i.inpackage         sl811hs.o
-    0x00002130   0x0000003c   Code   RO          600    i.inpackage_1       sl811hs_1.o
-    0x0000216c   0x00000190   Code   RO           13    i.main              main.o
-    0x000022fc   0x0000000c   Code   RO          347    i.out               sl811hs.o
-    0x00002308   0x0000000c   Code   RO          601    i.out_1             sl811hs_1.o
-    0x00002314   0x0000003c   Code   RO          348    i.outpackage        sl811hs.o
-    0x00002350   0x0000003c   Code   RO          602    i.outpackage_1      sl811hs_1.o
-    0x0000238c   0x00000158   Code   RO          349    i.port_inout        sl811hs.o
-    0x000024e4   0x0000015c   Code   RO          603    i.port_inout_1      sl811hs_1.o
-    0x00002640   0x000000a8   Code   RO          350    i.rd_host           sl811hs.o
-    0x000026e8   0x000000a8   Code   RO          604    i.rd_host_1         sl811hs_1.o
-    0x00002790   0x00000078   Code   RO          351    i.read_host_port    sl811hs.o
-    0x00002808   0x00000080   Code   RO          605    i.read_host_port_1  sl811hs_1.o
-    0x00002888   0x0000000c   Code   RO          353    i.setup             sl811hs.o
-    0x00002894   0x0000000c   Code   RO          607    i.setup_1           sl811hs_1.o
-    0x000028a0   0x0000007c   Code   RO          354    i.setuppackage      sl811hs.o
-    0x0000291c   0x0000007c   Code   RO          608    i.setuppackage_1    sl811hs_1.o
-    0x00002998   0x00000090   Code   RO          355    i.wr_host           sl811hs.o
-    0x00002a28   0x00000090   Code   RO          609    i.wr_host_1         sl811hs_1.o
-    0x00002ab8   0x00000041   Data   RO           17    .conststring        main.o
-    0x00002af9   0x00000003   PAD
-    0x00002afc   0x00000020   Data   RO         4694    Region$$Table       anon$$obj.o
+    0x000002e0   0x00000380   Code   RO            3    i.ACSII_format      main.o
+    0x00000660   0x00000058   Code   RO         1862    i.AFIO_GPxConfig    ht32f5xxxx_gpio.o
+    0x000006b8   0x000000e0   Code   RO            4    i.AT_MQTT           main.o
+    0x00000798   0x00000094   Code   RO            5    i.AT_Time           main.o
+    0x0000082c   0x0000006c   Code   RO         1286    i.CKCU_GetClocksFrequency  ht32f5xxxx_ckcu.o
+    0x00000898   0x0000003c   Code   RO         1288    i.CKCU_GetPLLFrequency  ht32f5xxxx_ckcu.o
+    0x000008d4   0x00000034   Code   RO         1289    i.CKCU_GetPeripFrequency  ht32f5xxxx_ckcu.o
+    0x00000908   0x00000028   Code   RO         1304    i.CKCU_PeripClockConfig  ht32f5xxxx_ckcu.o
+    0x00000930   0x00000040   Code   RO          729    i.Config_Descriptor  descr.o
+    0x00000970   0x0000001c   Code   RO          730    i.DEVICE_Descriptor  descr.o
+    0x0000098c   0x00000006   Code   RO          849    i.Delay             delay.o
+    0x00000992   0x00000002   PAD
+    0x00000994   0x00000018   Code   RO          850    i.Delayms           delay.o
+    0x000009ac   0x00000010   Code   RO          851    i.Delayus           delay.o
+    0x000009bc   0x00000010   Code   RO         1865    i.GPIO_DirectionConfig  ht32f5xxxx_gpio.o
+    0x000009cc   0x00000010   Code   RO         1869    i.GPIO_InputConfig  ht32f5xxxx_gpio.o
+    0x000009dc   0x0000002a   Code   RO         1874    i.GPIO_PullResistorConfig  ht32f5xxxx_gpio.o
+    0x00000a06   0x0000000a   Code   RO         1875    i.GPIO_ReadInBit    ht32f5xxxx_gpio.o
+    0x00000a10   0x00000074   Code   RO          329    i.Get_Descriptor    sl811hs.o
+    0x00000a84   0x0000005c   Code   RO          731    i.Get_HID_data_x    descr.o
+    0x00000ae0   0x00000058   Code   RO          732    i.Get_HID_data_y    descr.o
+    0x00000b38   0x0000001c   Code   RO          733    i.Get_ctl_length    descr.o
+    0x00000b54   0x00000010   Code   RO          274    i.HardFault_Handler  ht32f5xxxx_01_it.o
+    0x00000b64   0x00000094   Code   RO            7    i.NBiot_TIMER       main.o
+    0x00000bf8   0x00000020   Code   RO            8    i.NBiot_check       main.o
+    0x00000c18   0x00000002   Code   RO          275    i.NMI_Handler       ht32f5xxxx_01_it.o
+    0x00000c1a   0x00000002   PAD
+    0x00000c1c   0x00000020   Code   RO         2406    i.PWRCU_CheckReadyAccessed  ht32f5xxxx_pwrcu.o
+    0x00000c3c   0x00000002   Code   RO          276    i.PendSV_Handler    ht32f5xxxx_01_it.o
+    0x00000c3e   0x00000002   PAD
+    0x00000c40   0x00000014   Code   RO         3936    i.SERIAL_PutChar    ht32_serial.o
+    0x00000c54   0x00000002   Code   RO          277    i.SVC_Handler       ht32f5xxxx_01_it.o
+    0x00000c56   0x00000002   PAD
+    0x00000c58   0x00000038   Code   RO          331    i.Set_Address       sl811hs.o
+    0x00000c90   0x00000034   Code   RO          734    i.Set_Config        descr.o
+    0x00000cc4   0x00000002   Code   RO          278    i.SysTick_Handler   ht32f5xxxx_01_it.o
+    0x00000cc6   0x00000002   PAD
+    0x00000cc8   0x000000fc   Code   RO          873    i.SystemInit        system_ht32f5xxxx_01.o
+    0x00000dc4   0x000000c4   Code   RO          279    i.USART1_IRQHandler  ht32f5xxxx_01_it.o
+    0x00000e88   0x0000000a   Code   RO         3328    i.USART_GetFlagStatus  ht32f5xxxx_usart.o
+    0x00000e92   0x0000000a   Code   RO         3329    i.USART_GetIntStatus  ht32f5xxxx_usart.o
+    0x00000e9c   0x00000084   Code   RO         3331    i.USART_Init        ht32f5xxxx_usart.o
+    0x00000f20   0x00000010   Code   RO         3332    i.USART_IntConfig   ht32f5xxxx_usart.o
+    0x00000f30   0x00000006   Code   RO         3341    i.USART_ReceiveData  ht32f5xxxx_usart.o
+    0x00000f36   0x00000004   Code   RO         3342    i.USART_SendData    ht32f5xxxx_usart.o
+    0x00000f3a   0x00000014   Code   RO         3353    i.USART_TxRxCmd     ht32f5xxxx_usart.o
+    0x00000f4e   0x00000002   PAD
+    0x00000f50   0x000000a4   Code   RO            9    i.USB_HOST_SET_1    main.o
+    0x00000ff4   0x00000090   Code   RO           11    i.UxART_Configuration  main.o
+    0x00001084   0x00000020   Code   RO         4595    i.__0printf$8       mc_p.l(printf8.o)
+    0x000010a4   0x00000034   Code   RO         4596    i.__0snprintf$8     mc_p.l(printf8.o)
+    0x000010d8   0x00000028   Code   RO         4597    i.__0sprintf$8      mc_p.l(printf8.o)
+    0x00001100   0x0000001a   Code   RO         1477    i.__ARM_common_switch8  ht32f5xxxx_ckcu.o
+    0x0000111a   0x0000000e   Code   RO         4690    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00001128   0x00000002   Code   RO         4691    i.__scatterload_null  mc_p.l(handlers.o)
+    0x0000112a   0x0000000e   Code   RO         4692    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001138   0x00000428   Code   RO         4602    i._printf_core      mc_p.l(printf8.o)
+    0x00001560   0x00000020   Code   RO         4603    i._printf_post_padding  mc_p.l(printf8.o)
+    0x00001580   0x0000002c   Code   RO         4604    i._printf_pre_padding  mc_p.l(printf8.o)
+    0x000015ac   0x00000016   Code   RO         4605    i._snputc           mc_p.l(printf8.o)
+    0x000015c2   0x0000000a   Code   RO         4606    i._sputc            mc_p.l(printf8.o)
+    0x000015cc   0x00000030   Code   RO          332    i.commandloop       sl811hs.o
+    0x000015fc   0x00000008   Code   RO         3875    i.fputc             ht32_retarget.o
+    0x00001604   0x00000030   Code   RO          333    i.get_HID_IN_endpoint  sl811hs.o
+    0x00001634   0x00000038   Code   RO          334    i.host_go           sl811hs.o
+    0x0000166c   0x000000d0   Code   RO          335    i.host_init         sl811hs.o
+    0x0000173c   0x000000b8   Code   RO          336    i.host_port         sl811hs.o
+    0x000017f4   0x0000002c   Code   RO          337    i.host_reset        sl811hs.o
+    0x00001820   0x0000007c   Code   RO          338    i.host_set          sl811hs.o
+    0x0000189c   0x0000000c   Code   RO          339    i.in                sl811hs.o
+    0x000018a8   0x0000003c   Code   RO          340    i.inpackage         sl811hs.o
+    0x000018e4   0x00000110   Code   RO           12    i.main              main.o
+    0x000019f4   0x0000000c   Code   RO          341    i.out               sl811hs.o
+    0x00001a00   0x0000003c   Code   RO          342    i.outpackage        sl811hs.o
+    0x00001a3c   0x00000158   Code   RO          343    i.port_inout        sl811hs.o
+    0x00001b94   0x000000a8   Code   RO          344    i.rd_host           sl811hs.o
+    0x00001c3c   0x00000078   Code   RO          345    i.read_host_port    sl811hs.o
+    0x00001cb4   0x0000000c   Code   RO          347    i.setup             sl811hs.o
+    0x00001cc0   0x0000007c   Code   RO          348    i.setuppackage      sl811hs.o
+    0x00001d3c   0x00000090   Code   RO          349    i.wr_host           sl811hs.o
+    0x00001dcc   0x00000041   Data   RO           16    .conststring        main.o
+    0x00001e0d   0x00000003   PAD
+    0x00001e10   0x00000020   Data   RO         4688    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000074, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000068, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000004   Data   RW           18    .data               main.o
-    0x20000004   0x00000048   Data   RW           19    .data               main.o
-    0x2000004c   0x00000004   Data   RW           20    .data               main.o
-    0x20000050   0x00000004   Data   RW           25    .data               main.o
-    0x20000054   0x00000004   Data   RW          286    .data               ht32f5xxxx_01_it.o
-    0x20000058   0x0000000c   Data   RW          356    .data               sl811hs.o
-    0x20000064   0x0000000c   Data   RW          610    .data               sl811hs_1.o
-    0x20000070   0x00000004   Data   RW         3882    .data               ht32_retarget.o
+    0x20000000   0x00000004   Data   RW           17    .data               main.o
+    0x20000004   0x00000048   Data   RW           18    .data               main.o
+    0x2000004c   0x00000004   Data   RW           19    .data               main.o
+    0x20000050   0x00000004   Data   RW           24    .data               main.o
+    0x20000054   0x00000004   Data   RW          280    .data               ht32f5xxxx_01_it.o
+    0x20000058   0x0000000c   Data   RW          350    .data               sl811hs.o
+    0x20000064   0x00000004   Data   RW         3876    .data               ht32_retarget.o
 
 
-    Execution Region ER_ZI (Base: 0x20000074, Size: 0x00001664, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Base: 0x20000068, Size: 0x00001668, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000074   0x00001462   Zero   RW           15    .bss                main.o
-    0x200014d6   0x00000002   PAD
-    0x200014d8   0x00000200   Zero   RW          911    STACK               startup_ht32f5xxxx_01.o
+    0x20000068   0x00001462   Zero   RW           14    .bss                main.o
+    0x200014ca   0x00000006   PAD
+    0x200014d0   0x00000200   Zero   RW          905    STACK               startup_ht32f5xxxx_01.o
 
 
 ==============================================================================
@@ -2171,7 +2096,6 @@ Image component sizes
 
         46          6          0          0          0       1460   delay.o
        352         46          0          0          0       3240   descr.o
-       256         30          0          0          0       2603   descr_1.o
          8          0          0          4          0       2718   ht32_retarget.o
         20          6          0          0          0        601   ht32_serial.o
        220         32          0          4          0       2923   ht32f5xxxx_01_it.o
@@ -2179,16 +2103,15 @@ Image component sizes
        172          6          0          0          0       9418   ht32f5xxxx_gpio.o
         32          8          0          0          0       3495   ht32f5xxxx_pwrcu.o
        198         18          0          0          0      13123   ht32f5xxxx_usart.o
-      3120        770         65         84       5218      51583   main.o
+      2028        582         65         84       5218      49587   main.o
       1940         98          0         12          0      12432   sl811hs.o
-      1960        112          0         12          0      12626   sl811hs_1.o
        356        238          0          0        512        736   startup_ht32f5xxxx_01.o
        252         20          0          0          0        677   system_ht32f5xxxx_01.o
 
     ----------------------------------------------------------------------
-      9230       1430        100        116       5732     130123   Object Totals
+      5922       1100        100        104       5736     112898   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        12          0          3          0          2          0   (incl. Padding)
+        12          0          3          0          6          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2234,15 +2157,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     10936       1508        100        116       5732     127183   Grand Totals
-     10936       1508        100        116       5732     127183   ELF Image Totals
-     10936       1508        100        116          0          0   ROM Totals
+      7628       1178        100        104       5736     111102   Grand Totals
+      7628       1178        100        104       5736     111102   ELF Image Totals
+      7628       1178        100        104          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                11036 (  10.78kB)
-    Total RW  Size (RW Data + ZI Data)              5848 (   5.71kB)
-    Total ROM Size (Code + RO Data + RW Data)      11152 (  10.89kB)
+    Total RO  Size (Code + RO Data)                 7728 (   7.55kB)
+    Total RW  Size (RW Data + ZI Data)              5840 (   5.70kB)
+    Total ROM Size (Code + RO Data + RW Data)       7832 (   7.65kB)
 
 ==============================================================================
 
